@@ -11,6 +11,17 @@
         android:onClick="AbrirCadastro"
         android:text="@string/cadastrar" />
     
+    <TextView 
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lista_de_restaurantes"
+       	android:textColor="#00770b"
+       	android:textStyle="bold"
+       	android:padding="10dp"
+       	android:gravity="center"
+        />  
+    
     <ListView 
         android:id="@+id/lista_de_restaurantes"
         android:layout_width="match_parent"
