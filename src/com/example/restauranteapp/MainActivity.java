@@ -26,11 +26,11 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		lista = (ListView) findViewById(R.id.lista_de_restaurantes);
-		listar(null);
 		
-		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-	        
+		lista = (ListView) findViewById(R.id.lista_de_restaurantes);		
+		
+		listar(null);		
+		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {	        
 			@Override
 	        public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
 	        	Restaurante restaurante = (Restaurante) lista.getItemAtPosition(position);	                        
